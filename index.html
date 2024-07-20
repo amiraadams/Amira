@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="design.css">
+<body>
+    
+    <div class="main">
+        <div class="navbar">
+            <img src="logobg.png" class="logo">
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#4f000b"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="resumee.pdf">RESUME</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <ul class="topbar">
+                
+                <li class="hideOnMobile"><a href="index.html">HOME</a></li>
+                <li class="hideOnMobile"><a href="resumee.pdf">RESUME</a></li>
+                <li class="hideOnMobile"><a href="skills.html">SKILLS</a></li>
+                <li class="hideOnMobile"><a href="contact.html">CONTACT</a></li>
+                <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="17px" viewBox="0 -960 960 960" width="40px" fill="#4f000b"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </div>
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
+        
+        <div class="info">
+            <h1> Adams Amatullah.</h1>
+            <h2> Cyber Security Enthusiast</h2>
+            <p> A cyber security enthusiast and student,whose specialty is Governance, Risk and Compliance. <br>I aim to share my insights about cyber security, feel free to check out my <br>resume, and reach me out via the contact box.</p>
+           
+            <button class="button"><a href="contact.html">Hire Me</a></button>
+        </div>
+        <div class="image">
+            <img src="pic.png" class="picture" width="500px">
+            </div>
+           <div class="icons">
+        <a href="https://www.linkedin.com/in/amatullah-adams-92b013267?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="https://www.instagram.com/adams.mhira/"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="https://x.com/AAdams52314"><ion-icon name="logo-twitter"></ion-icon></a>
+        </div>
+        
+   
+    
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+        </div>
+       
+        
+</body>
+</html>
